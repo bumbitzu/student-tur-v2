@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Tur - Transport sigur și accesibil pentru elevi și studenți</title>
+  <meta name="description" content="Student Tur oferă transport sigur și rapid pentru elevi și studenți: excursii, închirieri microbuze și transferuri. Cere acum o ofertă personalizată!" />
+  <meta property="og:title" content="Student Tur - Transport sigur și accesibil pentru elevi și studenți" />
+  <meta property="og:description" content="Excursii, închirieri microbuze și transferuri rapide – punctualitate și confort la fiecare cursă." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://student-tur.ro" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Student Tur - Transport sigur și accesibil pentru elevi și studenți" />
+  <meta name="twitter:description" content="Excursii, închirieri microbuze și transferuri rapide – punctualitate și confort la fiecare cursă." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234c1d95'/><path d='M28 68L18 32h14l6 24 9-24h12l9 24 6-24h14l-10 36H76l-9-24-9 24H46l-9-24-9 24H28z' fill='white'/></svg>" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Student Tur",
+      "url": "https://student-tur.ro",
+      "logo": "https://student-tur.ro/logo.svg",
+      "description": "Servicii de transport și excursii pentru elevi și studenți.",
+      "telephone": "+40 712 345 678",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Educației 12",
+        "addressLocality": "Cluj-Napoca",
+        "addressRegion": "Cluj",
+        "postalCode": "400000",
+        "addressCountry": "RO"
+      },
+      "sameAs": [
+        "https://www.facebook.com/studenttur",
+        "https://www.instagram.com/studenttur"
+      ]
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    h1, h2, h3 { text-wrap: balance; }
+    [x-cloak] { display: none !important; }
+  </style>
+</head>
+<body class="bg-white text-zinc-900">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-indigo-600 focus:px-4 focus:py-2 focus:text-white">Sari la conținut</a>
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
+    <nav class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Principal">
+      <a href="#hero" class="flex items-center gap-2" aria-label="Student Tur">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 6h18l-1.5 9H4.5L3 6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 6l2-3h6l2 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8" cy="18" r="1.5" fill="currentColor" />
+            <circle cx="16" cy="18" r="1.5" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="font-semibold text-lg">Student Tur</span>
+      </a>
+      <button type="button" class="inline-flex items-center justify-center rounded-xl border border-zinc-200 p-2 text-zinc-600 transition hover:text-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:hidden" aria-controls="mobile-menu" aria-expanded="false" id="menu-toggle">
+        <span class="sr-only">Deschide meniul</span>
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#despre" class="text-sm font-medium text-zinc-700 transition hover:text-indigo-600">Despre noi</a>
+        <a href="#servicii" class="text-sm font-medium text-zinc-700 transition hover:text-indigo-600">Servicii</a>
+        <a href="#flota" class="text-sm font-medium text-zinc-700 transition hover:text-indigo-600">Flotă</a>
+        <a href="#contact" class="text-sm font-medium text-zinc-700 transition hover:text-indigo-600">Contact</a>
+        <a href="#contact" class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Cere ofertă</a>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden" role="dialog" aria-modal="true">
+      <div class="px-4 pb-6 pt-2 sm:px-6">
+        <div class="space-y-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg">
+          <a href="#despre" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-indigo-50" data-menu-close>Despre noi</a>
+          <a href="#servicii" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-indigo-50" data-menu-close>Servicii</a>
+          <a href="#flota" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-indigo-50" data-menu-close>Flotă</a>
+          <a href="#faq" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-indigo-50" data-menu-close>Întrebări frecvente</a>
+          <a href="#contact" class="block rounded-lg bg-indigo-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700" data-menu-close>Cere ofertă</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="isolate">
+    <section id="hero" class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1494510723230-59fcca2c6b75?auto=format&fit=crop&w=1600&q=80" alt="Autocar modern pe drum" class="h-full w-full object-cover" width="1600" height="900" />
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/80 via-indigo-900/60 to-zinc-900/50"></div>
+      </div>
+      <div class="relative mx-auto max-w-screen-xl px-4 py-24 sm:px-6 md:py-32 lg:px-8">
+        <div class="max-w-3xl space-y-6 text-white">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Reduceri pentru grupuri mari
+          </span>
+          <h1 class="text-4xl font-bold md:text-5xl lg:text-6xl">Transport sigur și accesibil pentru elevi și studenți</h1>
+          <p class="text-base leading-relaxed text-slate-100 md:text-lg">Excursii, închirieri microbuze și transferuri rapide – punctualitate și confort la fiecare cursă.</p>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 text-base font-semibold text-white transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <span>Cere ofertă</span>
+              <svg class="ml-2 h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="tel:+40712345678" class="inline-flex items-center justify-center rounded-xl border border-white/60 px-5 py-3 text-base font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <svg class="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 5a2 2 0 012-2h2a1 1 0 011 1v3a1 1 0 01-.7.95l-1.8.6a12.05 12.05 0 006.8 6.8l.6-1.8A1 1 0 0115 13h3a1 1 0 011 1v2a2 2 0 01-2 2h-1C9.373 18 6 14.627 6 10V9a2 2 0 012-2H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Sună acum
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 md:block">
+        <span class="text-sm font-medium text-white/80">Derulează pentru mai multe detalii</span>
+      </div>
+    </section>
+
+    <section id="despre" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div class="space-y-6">
+            <span class="inline-flex rounded-full bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700">Experiență din 2008</span>
+            <h2 class="text-2xl font-semibold md:text-3xl">Despre Student Tur</h2>
+            <p class="text-base leading-relaxed text-zinc-600">Suntem partenerul de încredere pentru școli, universități și organizații studențești care caută transport sigur, confortabil și punctual. Ne adaptăm fiecărui grup și livrăm servicii impecabile în toată țara.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base text-zinc-600">Licențe de transport actualizate și audit de siguranță periodic.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base text-zinc-600">Disponibilitate rapidă și coordonare dedicată pentru fiecare cursă.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M3 7l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 12l9 4 9-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base text-zinc-600">Acoperire națională și parteneriate pentru trasee internaționale.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 3v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base text-zinc-600">Asigurări complete pentru pasageri și bagaje.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden rounded-3xl">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Studenți pregătiți de excursie" class="h-full w-full object-cover" width="1200" height="900" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicii" class="bg-slate-50 py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-2xl font-semibold md:text-3xl">Servicii adaptate nevoilor tale</h2>
+          <p class="mt-4 text-base text-zinc-600">De la naveta zilnică la excursii tematice, echipa noastră se ocupă de tot ce înseamnă planificare, logistică și siguranță.</p>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="card rounded-2xl border border-zinc-200/60 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 6V4h10v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Transport elevi/studenți</h3>
+            <p class="mt-2 text-sm text-zinc-600">Rute dedicate pentru naveta școlară și universitară, cu orare flexibile și monitorizare în timp real.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700">Află mai mult
+              <svg class="ml-1 h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+          <article class="card rounded-2xl border border-zinc-200/60 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7l3-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Excursii tematice</h3>
+            <p class="mt-2 text-sm text-zinc-600">Organizăm trasee culturale, tabere și excursii de o zi cu ghizi acreditați și suport logistic complet.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700">Află mai mult
+              <svg class="ml-1 h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+          <article class="card rounded-2xl border border-zinc-200/60 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 5h14v6H5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 11v8h10v-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Închirieri microbuze/autocare</h3>
+            <p class="mt-2 text-sm text-zinc-600">Flotă modernă disponibilă pentru evenimente, conferințe, transport sportiv și proiecte corporate.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700">Află mai mult
+              <svg class="ml-1 h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+          <article class="card rounded-2xl border border-zinc-200/60 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 19h16M4 5h16v6H4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 11v8m10-8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Transfer aeroport</h3>
+            <p class="mt-2 text-sm text-zinc-600">Transferuri rapide spre principalele aeroporturi, cu monitorizarea zborurilor și suport 24/7.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700">Află mai mult
+              <svg class="ml-1 h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="flota" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div>
+            <h2 class="text-2xl font-semibold md:text-3xl">Flotă modernă și versatilă</h2>
+            <p class="mt-4 max-w-2xl text-base text-zinc-600">Vehicule întreținute riguros, dotate cu aer condiționat, Wi-Fi și sisteme de siguranță avansate. Pe mobil poți derula orizontal pentru a vedea toate opțiunile.</p>
+          </div>
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Solicită ofertă flotă</a>
+        </div>
+        <div class="mt-10 overflow-x-auto pb-4" style="scrollbar-width: thin;" role="list">
+          <div class="flex snap-x snap-mandatory gap-6 md:grid md:grid-cols-3 md:gap-8">
+            <article class="min-w-[260px] snap-start rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1529429617124-aee79a067cbd?auto=format&fit=crop&w=800&q=80" alt="Microbuz modern" class="h-44 w-full rounded-xl object-cover" width="800" height="600" loading="lazy" />
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">Microbuz 19 locuri</h3>
+                <ul class="space-y-1 text-sm text-zinc-600">
+                  <li>Aer condiționat dublu circuit</li>
+                  <li>USB &amp; Wi-Fi la fiecare rând</li>
+                  <li>Spațiu bagaje 3m³</li>
+                </ul>
+              </div>
+            </article>
+            <article class="min-w-[260px] snap-start rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80" alt="Autocar confortabil" class="h-44 w-full rounded-xl object-cover" width="800" height="600" loading="lazy" />
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">Autocar 50 locuri</h3>
+                <ul class="space-y-1 text-sm text-zinc-600">
+                  <li>Scaune ergonomice reclinabile</li>
+                  <li>Sistem multimedia &amp; microfon</li>
+                  <li>Toaletă la bord</li>
+                </ul>
+              </div>
+            </article>
+            <article class="min-w-[260px] snap-start rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Van premium" class="h-44 w-full rounded-xl object-cover" width="800" height="600" loading="lazy" />
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">Van premium 8 locuri</h3>
+                <ul class="space-y-1 text-sm text-zinc-600">
+                  <li>Scaune din piele și climatizare zonală</li>
+                  <li>Portbagaj extins pentru bagaje voluminoase</li>
+                  <li>Prize 220V și USB</li>
+                </ul>
+              </div>
+            </article>
+            <article class="min-w-[260px] snap-start rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="Autocar turistic" class="h-44 w-full rounded-xl object-cover" width="800" height="600" loading="lazy" />
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">Autocar turistic 60 locuri</h3>
+                <ul class="space-y-1 text-sm text-zinc-600">
+                  <li>Iluminare ambientală și sistem video</li>
+                  <li>Frigider și dozator apă</li>
+                  <li>Asistență tehnică 24/7</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="avantaje" class="bg-slate-50 py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-2xl font-semibold md:text-3xl">De ce să alegi Student Tur</h2>
+          <p class="mt-4 text-base text-zinc-600">Investim constant în pregătirea șoferilor și în tehnologie pentru a oferi un transport sigur și plăcut.</p>
+        </div>
+        <div class="mt-12 grid gap-8 md:grid-cols-2">
+          <div class="flex items-start gap-4">
+            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 6v6l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="text-lg font-semibold">Punctualitate garantată</h3>
+              <p class="mt-2 text-sm text-zinc-600">Monitorizăm traseele în timp real și ajustăm itinerariile pentru a evita întârzierile neprevăzute.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21l-8-4V7l8-4 8 4v10l-8 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 10.5a2 2 0 100 4 2 2 0 000-4z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="text-lg font-semibold">Siguranță la standarde europene</h3>
+              <p class="mt-2 text-sm text-zinc-600">Vehicule dotate cu sisteme ABS, ESP și centuri pe toate locurile, revizii lunare și asigurări complete.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3l7 4v8l-7 4-7-4V7l7-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 12h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="text-lg font-semibold">Preț corect și transparent</h3>
+              <p class="mt-2 text-sm text-zinc-600">Oferim oferte personalizate, fără costuri ascunse și cu discounturi pentru colaborări recurente.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 12a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M5 21a7 7 0 0114 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="text-lg font-semibold">Șoferi profesioniști</h3>
+              <p class="mt-2 text-sm text-zinc-600">Toți șoferii sunt certificați, cunosc limba engleză și au training periodic în comunicare cu tinerii.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoniale" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-2xl font-semibold md:text-3xl">Ce spun partenerii noștri</h2>
+          <p class="mt-4 text-base text-zinc-600">Ne mândrim cu recomandările primite de la licee, universități și organizații studențești din toată țara.</p>
+        </div>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <figure class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-zinc-600">“Student Tur ne-a oferit o experiență fără griji pentru excursia din Viena. Organizare impecabilă și șofer extrem de atent.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="Portret client" class="h-10 w-10 rounded-full object-cover" width="120" height="120" loading="lazy" />
+              <div>
+                <span class="text-sm font-semibold text-zinc-900">Ana M.</span>
+                <p class="text-xs text-zinc-500">Coordonator proiect Erasmus</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-zinc-600">“Ne bazăm pe ei pentru naveta zilnică a studenților. Sunt punctuali, flexibili și comunică rapid orice schimbare.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="Portret client" class="h-10 w-10 rounded-full object-cover" width="120" height="120" loading="lazy" />
+              <div>
+                <span class="text-sm font-semibold text-zinc-900">Mihai M.</span>
+                <p class="text-xs text-zinc-500">Administrator campus</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-zinc-600">“Excursia de iarnă a fost un succes. Microbuzul curat, dotări moderne, iar șoferul a fost parte din echipa noastră.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=120&q=80" alt="Portret client" class="h-10 w-10 rounded-full object-cover" width="120" height="120" loading="lazy" />
+              <div>
+                <span class="text-sm font-semibold text-zinc-900">Ioana M.</span>
+                <p class="text-xs text-zinc-500">Profesor coordonator</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="bg-slate-50 py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-2xl font-semibold md:text-3xl">Galerie din călătoriile noastre</h2>
+          <p class="mt-4 text-base text-zinc-600">Momente surprinse în excursiile organizate de Student Tur. Alege-ți următoarea destinație!</p>
+        </div>
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Peisaj montan" class="h-full w-full object-cover" width="600" height="800" loading="lazy" />
+          </div>
+          <div class="overflow-hidden rounded-2xl lg:row-span-2">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80" alt="Grup de studenți" class="h-full w-full object-cover" width="600" height="900" loading="lazy" />
+          </div>
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80" alt="Autocar în stație" class="h-full w-full object-cover" width="600" height="800" loading="lazy" />
+          </div>
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1529338296731-c4280a44fc47?auto=format&fit=crop&w=600&q=80" alt="Student la fereastră" class="h-full w-full object-cover" width="600" height="800" loading="lazy" />
+          </div>
+          <div class="overflow-hidden rounded-2xl lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Autocar pe autostradă" class="h-full w-full object-cover" width="1200" height="800" loading="lazy" />
+          </div>
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Elevi veseli" class="h-full w-full object-cover" width="600" height="800" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-2xl font-semibold md:text-3xl">Întrebări frecvente</h2>
+          <p class="mt-4 text-base text-zinc-600">Am adunat cele mai comune întrebări pentru a-ți oferi claritate înainte de rezervare.</p>
+        </div>
+        <div class="mt-12 space-y-4" id="accordion">
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-1">
+                Cum pot solicita o ofertă personalizată?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-1" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Completezi formularul din secțiunea Contact sau ne suni direct. Un consultant îți răspunde în cel mult o zi lucrătoare cu o ofertă adaptată grupului tău.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-2">
+                Ce tipuri de vehicule aveți disponibile?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-2" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Flota cuprinde vanuri premium, microbuze de 19 locuri, autocare de 50 și 60 de locuri, toate dotate cu aer condiționat și sisteme de siguranță moderne.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-3">
+                Oferiți reduceri pentru grupuri sau colaborări pe termen lung?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-3" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Da, avem reduceri progresive în funcție de numărul de curse și oferim contracte avantajoase pentru parteneriate pe tot anul școlar.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-4">
+                Cum asigurați siguranța pasagerilor?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-4" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Echipăm fiecare vehicul cu centuri pe toate locurile, sistem GPS și monitorizare, iar șoferii trec prin teste medicale și psihologice periodice.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-5">
+                Ce se întâmplă dacă zborul este întârziat?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-5" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Monitorizăm în timp real statusul zborului și ajustăm ora de preluare. Nu percepem taxe suplimentare pentru întârzieri anunțate din timp.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-zinc-200 bg-white">
+            <h3>
+              <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-zinc-900" aria-expanded="false" aria-controls="faq-6">
+                Ce documente sunt necesare pentru excursii în străinătate?
+                <svg class="h-5 w-5 flex-shrink-0 text-indigo-600 transition-transform" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-6" class="max-h-0 overflow-hidden px-6 transition-all" role="region" aria-hidden="true">
+              <p class="pb-4 text-sm text-zinc-600">Ne ocupăm de checklist și coordonăm avizele. Ai nevoie doar de actele de identitate, acordurile părinților și, unde este cazul, asigurări medicale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-indigo-600 to-indigo-700 py-12">
+      <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-6 px-4 text-center text-white sm:px-6 lg:flex-row lg:px-8 lg:text-left">
+        <div>
+          <p class="text-sm uppercase tracking-wider text-white/70">Gata de drum?</p>
+          <h2 class="mt-2 text-2xl font-semibold md:text-3xl">Rezervă transportul pentru următoarea excursie</h2>
+        </div>
+        <a href="#contact" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-base font-semibold text-indigo-700 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Cere ofertă acum</a>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div>
+            <h2 class="text-2xl font-semibold md:text-3xl">Contact &amp; Rezervări</h2>
+            <p class="mt-4 text-base text-zinc-600">Răspundem rapid – de obicei în aceeași zi lucrătoare.</p>
+            <form id="contact-form" class="mt-8 space-y-6" novalidate>
+              <div>
+                <label for="nume" class="block text-sm font-medium text-zinc-700">Nume complet</label>
+                <input id="nume" name="nume" type="text" required class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500" placeholder="Nume și prenume" />
+                <p class="mt-1 text-sm text-red-600" id="error-nume" hidden>Te rugăm să completezi numele.</p>
+              </div>
+              <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-zinc-700">Email</label>
+                  <input id="email" name="email" type="email" required class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500" placeholder="exemplu@email.com" />
+                  <p class="mt-1 text-sm text-red-600" id="error-email" hidden>Introduce un email valid.</p>
+                </div>
+                <div>
+                  <label for="telefon" class="block text-sm font-medium text-zinc-700">Telefon</label>
+                  <input id="telefon" name="telefon" type="tel" required pattern="^\+?4?0?7\d{8}$" class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500" placeholder="07xxxxxxxx" />
+                  <p class="mt-1 text-sm text-red-600" id="error-telefon" hidden>Introduce un număr de telefon valid.</p>
+                </div>
+              </div>
+              <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                  <label for="serviciu" class="block text-sm font-medium text-zinc-700">Tip serviciu</label>
+                  <select id="serviciu" name="serviciu" required class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500">
+                    <option value="" disabled selected>Selectează o opțiune</option>
+                    <option value="naveta">Transport elevi/studenți</option>
+                    <option value="excursie">Excursie</option>
+                    <option value="inchiriere">Închiriere microbuz/autocar</option>
+                    <option value="transfer">Transfer aeroport</option>
+                  </select>
+                  <p class="mt-1 text-sm text-red-600" id="error-serviciu" hidden>Selectează tipul serviciului.</p>
+                </div>
+                <div>
+                  <label for="data" class="block text-sm font-medium text-zinc-700">Dată aproximativă</label>
+                  <input id="data" name="data" type="date" required class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500" />
+                  <p class="mt-1 text-sm text-red-600" id="error-data" hidden>Alege o dată.</p>
+                </div>
+              </div>
+              <div>
+                <label for="mesaj" class="block text-sm font-medium text-zinc-700">Mesaj</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required class="mt-2 block w-full rounded-xl border-zinc-200 text-base focus:border-indigo-500 focus:ring-indigo-500" placeholder="Detalii despre grup și călătorie"></textarea>
+                <p class="mt-1 text-sm text-red-600" id="error-mesaj" hidden>Spune-ne câteva detalii.</p>
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                <button type="submit" class="inline-flex w-full items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 text-base font-semibold text-white transition hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:w-auto">Trimite solicitarea</button>
+                <a href="https://wa.me/40712345678" class="inline-flex items-center rounded-xl border border-indigo-200 px-5 py-3 text-base font-semibold text-indigo-700 transition hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  <svg class="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2a10 10 0 00-8.94 14.5L2 22l5.7-1.86A10 10 0 1012 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.8 9.4a5.5 5.5 0 007.8 7.8l-1.8-2.4-1.1.4a4.1 4.1 0 01-4.5-4.5l.4-1.1-2.4-1.8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Scrie pe WhatsApp
+                </a>
+              </div>
+              <div id="form-status" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700"></div>
+            </form>
+          </div>
+          <div class="space-y-6">
+            <div class="rounded-3xl border border-zinc-200 bg-slate-50 p-6">
+              <h3 class="text-lg font-semibold">Date de contact</h3>
+              <ul class="mt-4 space-y-4 text-sm text-zinc-600">
+                <li class="flex items-start gap-3">
+                  <span class="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 5a2 2 0 012-2h2a1 1 0 011 1v3a1 1 0 01-.7.95l-1.8.6a12.05 12.05 0 006.8 6.8l.6-1.8A1 1 0 0115 13h3a1 1 0 011 1v2a2 2 0 01-2 2h-1C9.373 18 6 14.627 6 10V9a2 2 0 012-2H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-zinc-900">Telefon</p>
+                    <a href="tel:+40712345678" class="text-indigo-600 hover:text-indigo-700">+40 712 345 678</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-zinc-900">Email</p>
+                    <a href="mailto:contact@student-tur.ro" class="text-indigo-600 hover:text-indigo-700">contact@student-tur.ro</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-zinc-900">Adresă</p>
+                    <p>Str. Educației 12, Cluj-Napoca</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 12h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-zinc-900">Program</p>
+                    <p>Luni - Vineri: 08:00 - 18:00<br />Sâmbătă: 10:00 - 14:00</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="overflow-hidden rounded-3xl">
+              <iframe title="Hartă Student Tur" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.228539882728!2d23.59753577695092!3d46.77121014498052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c21b0c4b0f7%3A0x123456789abcdef!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-zinc-900 py-12 text-slate-50">
+    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 sm:px-6 lg:grid-cols-4 lg:gap-12 lg:px-8">
+      <div class="space-y-4">
+        <a href="#hero" class="flex items-center gap-2" aria-label="Student Tur">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 6h18l-1.5 9H4.5L3 6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 6l2-3h6l2 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="8" cy="18" r="1.5" fill="currentColor" />
+              <circle cx="16" cy="18" r="1.5" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="font-semibold">Student Tur</span>
+        </a>
+        <p class="text-sm text-slate-300">Transport specializat pentru elevi și studenți, cu accent pe siguranță, confort și comunicare transparentă.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/studenttur" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-indigo-600" aria-label="Facebook">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13 22V12h3l1-4h-4V6c0-1.1.9-2 2-2h2V0h-3a5 5 0 00-5 5v3H7v4h3v10h3z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/studenttur" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-indigo-600" aria-label="Instagram">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+              <path d="M16 11.37A3.37 3.37 0 1112.63 8 3.37 3.37 0 0116 11.37z" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Linkuri utile</h3>
+        <ul class="mt-4 space-y-3 text-sm text-slate-300">
+          <li><a href="#servicii" class="hover:text-white">Servicii</a></li>
+          <li><a href="#flota" class="hover:text-white">Flotă</a></li>
+          <li><a href="#testimoniale" class="hover:text-white">Testimoniale</a></li>
+          <li><a href="#faq" class="hover:text-white">Întrebări frecvente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Documente</h3>
+        <ul class="mt-4 space-y-3 text-sm text-slate-300">
+          <li><a href="#contact" class="hover:text-white">Termeni și condiții</a></li>
+          <li><a href="#contact" class="hover:text-white">Politica de confidențialitate</a></li>
+          <li><a href="#contact" class="hover:text-white">Licențe transport</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Rămâi conectat</h3>
+        <p class="mt-4 text-sm text-slate-300">Înscrie-te pentru a primi oferte speciale și noutăți despre excursii tematice.</p>
+        <form class="mt-4 flex flex-col gap-3 sm:flex-row">
+          <label for="newsletter" class="sr-only">Email newsletter</label>
+          <input id="newsletter" type="email" required class="flex-1 rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm text-white placeholder:text-slate-300 focus:border-white focus:outline-none" placeholder="emailul tău" />
+          <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Abonare</button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/10"></div>
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-slate-400 sm:px-6 lg:flex-row lg:px-8">
+      <p>&copy; <span id="year"></span> Student Tur. Toate drepturile rezervate.</p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="#contact" class="hover:text-white">Termeni</a>
+        <a href="#contact" class="hover:text-white">Confidențialitate</a>
+        <a href="#contact" class="hover:text-white">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = mobileMenu.querySelectorAll('[data-menu-close]');
+    menuToggle?.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuToggle.setAttribute('aria-expanded', String(!isHidden));
+    });
+    menuLinks.forEach((link) => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    const accordion = document.getElementById('accordion');
+    accordion?.querySelectorAll('button[aria-controls]').forEach((button) => {
+      const svg = button.querySelector('svg');
+      const region = document.getElementById(button.getAttribute('aria-controls'));
+      region.style.transitionProperty = 'max-height';
+      region.style.transitionDuration = '300ms';
+      region.style.transitionTimingFunction = 'cubic-bezier(0.4, 0, 0.2, 1)';
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        region.setAttribute('aria-hidden', String(expanded));
+        region.style.maxHeight = expanded ? '0px' : region.scrollHeight + 'px';
+        svg.style.transform = expanded ? 'rotate(0deg)' : 'rotate(45deg)';
+      });
+    });
+
+    const form = document.getElementById('contact-form');
+    const statusBox = document.getElementById('form-status');
+    if (form) {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        let valid = true;
+        const fields = [
+          { id: 'nume', error: 'error-nume' },
+          { id: 'email', error: 'error-email' },
+          { id: 'telefon', error: 'error-telefon' },
+          { id: 'serviciu', error: 'error-serviciu' },
+          { id: 'data', error: 'error-data' },
+          { id: 'mesaj', error: 'error-mesaj' }
+        ];
+        fields.forEach(({ id, error }) => {
+          const input = document.getElementById(id);
+          const errorEl = document.getElementById(error);
+          if (!input.checkValidity()) {
+            errorEl.hidden = false;
+            input.setAttribute('aria-describedby', error);
+            valid = false;
+          } else {
+            errorEl.hidden = true;
+            input.removeAttribute('aria-describedby');
+          }
+        });
+        if (!valid) {
+          statusBox.textContent = 'Verifică câmpurile marcate și încearcă din nou.';
+          statusBox.classList.remove('hidden', 'bg-emerald-50', 'border-emerald-200', 'text-emerald-700');
+          statusBox.classList.add('bg-red-50', 'border-red-200', 'text-red-700');
+          statusBox.setAttribute('role', 'alert');
+          return;
+        }
+        statusBox.textContent = 'Mulțumim! Cererea ta a fost trimisă. Te contactăm în cel mai scurt timp.';
+        statusBox.classList.remove('hidden', 'bg-red-50', 'border-red-200', 'text-red-700');
+        statusBox.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-700');
+        statusBox.setAttribute('role', 'status');
+        form.reset();
+        form.querySelector('select').selectedIndex = 0;
+      });
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
