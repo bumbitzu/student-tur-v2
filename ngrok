@@ -1,0 +1,5 @@
+npm install -g ngrok
+npm install -g serve
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+serve
+ngrok http 3000
