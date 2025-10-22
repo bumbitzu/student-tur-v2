@@ -4,8 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server'; 
-import Login from '../src/Login.js';
-import Dashboard from '../src/Dashboard.js';
+import Home from '../src/Home.jsx';
 
 const app = express();
 const PORT = 4001;
@@ -45,65 +44,17 @@ function renderComponentWithProps(component, props = {}) {
     };
 }
 
-/**
- * Mock database/API simulation
- * In a real application, this would be replaced with actual database calls
- * or external API requests
- */
-const mockDatabase = {
-    users: [
-        { id: 1, name: 'John Doe', role: 'admin' },
-        { id: 2, name: 'Jane Smith', role: 'user' }
-    ],
-    dashboardData: [
-        'Sales: $15,000',
-        'New Users: 245',
-        'Orders: 89',
-        'Revenue Growth: +12%'
-    ]
-};
 
 // === ROUTES WITH SERVER-SIDE DATA ===
 
 
-// Login route - handles authentication UI with error messages
-app.get('/login', (req, res) => {
-    const loginProps = {
-        message: req.query.error ? 'Invalid credentials' : null,
-        redirectUrl: req.query.redirect || '/dashboard'
-    };
-    renderComponentWithProps(<Login />, loginProps)(req, res);
-});
-
 // Dashboard route - protected route with user data
-app.get('/dashboard', (req, res) => {
-    // Simulate authentication - in reality you would verify token/session
-    const userId = req.query.userId || 1;
-    const user = mockDatabase.users.find(u => u.id === userId);
-    
-    // Redirect to login if user not found
-    if (!user) {
-        return res.redirect('/login?error=1');
-    }
-    
-    // Prepare props with user data and dashboard content
-    const dashboardProps = {
-        initialData: mockDatabase.dashboardData,
-        user: user
-    };
-    
-    renderComponentWithProps(<Dashboard />, dashboardProps)(req, res);
+app.get('/', (req, res) => {
+
+    renderComponentWithProps(<Home/>)(req, res);
 });
 
 // === API ENDPOINTS ===
-
-// API endpoint for dynamic dashboard data
-app.get('/api/dashboard-data', (req, res) => {
-    res.json({
-        data: mockDatabase.dashboardData,
-        timestamp: new Date().toISOString()
-    });
-});
 
 // Start the server and display available routes
 app.listen(PORT, () => {
