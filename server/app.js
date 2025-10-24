@@ -5,6 +5,7 @@ import path from 'path';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server'; 
 import Home from '../src/Home.jsx';
+import seo from '../src/components/seo.config.js';
 
 const app = express();
 const PORT = 4001;
@@ -36,10 +37,29 @@ function renderComponentWithProps(component, props = {}) {
             
             // Inject props into HTML for client-side hydration
             const propsScript = `<script>window.__INITIAL_PROPS__ = ${JSON.stringify(props)};</script>`;
-            const htmlWithProps = data.replace('</head>', `${propsScript}</head>`);
+
+            // Prepare SEO head tags
+            const jsonLd = `<script type="application/ld+json">${JSON.stringify(seo.jsonLd)}</script>`;
+            const headTags = [
+                `<meta name="description" content="${seo.description}"/>`,
+                `<meta property="og:title" content="${seo.title}"/>`,
+                `<meta property="og:description" content="${seo.description}"/>`,
+                `<meta property="og:type" content="${seo.ogType}"/>`,
+                `<meta property="og:url" content="${seo.url}"/>`,
+                `<meta property="og:image" content="${seo.image}"/>`,
+                `<meta name="twitter:card" content="${seo.twitterCard}"/>`,
+                `<meta name="twitter:title" content="${seo.title}"/>`,
+                `<meta name="twitter:description" content="${seo.description}"/>`,
+                `<meta name="twitter:image" content="${seo.image}"/>`,
+                jsonLd,
+            ].join('\n');
+
+            // Replace title if present and inject other head tags + props
+            let htmlWithHead = data.replace(/<title>.*?<\/title>/i, `<title>${seo.title}</title>`);
+            htmlWithHead = htmlWithHead.replace('</head>', `${headTags}\n${propsScript}</head>`);
             
             // Replace the empty root div with the server-rendered component
-            return res.send(htmlWithProps.replace('<div id="root"></div>', `<div id="root">${stringComponent}</div>`));
+            return res.send(htmlWithHead.replace('<div id="root"></div>', `<div id="root">${stringComponent}</div>`));
         });
     };
 }
